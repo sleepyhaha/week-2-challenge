@@ -52,3 +52,29 @@ header nav a {
   transform: translate(-50%, -50%);
   color: white;
 }
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 4%;
+}
+
+.main-section {
+  margin-bottom: 5%;
+}
+
+.section-title {
+  text-align: center;
+  float: left;
+  width: 30%;
+}
+
+.about-text {
+  float: right;
+  width: 70%;
+}
+
+.portfolio-images {
+  float: right;
+  width: 70%;
+}
