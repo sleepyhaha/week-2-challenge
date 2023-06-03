@@ -1,3 +1,35 @@
 * {
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  width: 100vw;
+}
+
+a {
+  text-decoration: solid;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(95, 94, 95);
+}
+
+header h1 {
+  color: white;
+  display: inline;
+  position: relative;
+  font-size: 4rem;
+  left: 2%;
+}
+
+header nav {
+  width: 40vw;
+  display: inline-block;
+}
+
+header nav a {
+  color: white;
+  font-size: 2rem;
+  margin: 1%;
 }
