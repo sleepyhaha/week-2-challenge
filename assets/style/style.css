@@ -26,6 +26,7 @@ header h1 {
 header nav {
   width: 40vw;
   display: inline-block;
+  margin-right: 2%;
 }
 
 header nav a {
@@ -54,9 +55,12 @@ header nav a {
 }
 
 main {
+  width: 100%;
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   margin-top: 4%;
+  right: 2%;
 }
 
 .main-section {
@@ -75,6 +79,16 @@ main {
 }
 
 .portfolio-images {
+  display: flex;
+  flex-flow: column wrap;
   float: right;
   width: 70%;
+}
+
+.secondary-image {
+  margin-top: 2%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-gap: 3% 2%;
 }
