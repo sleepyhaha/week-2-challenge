@@ -8,6 +8,10 @@ a {
   text-decoration: solid;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -25,14 +29,13 @@ header h1 {
 
 header nav {
   width: 40vw;
-  display: inline-block;
-  right: 2%;
+  display: inline;
 }
 
 header nav a {
   color: white;
   font-size: 2rem;
-  margin: 1%;
+  margin: 6%;
 }
 
 .hero-img {
@@ -85,10 +88,47 @@ main {
   width: 70%;
 }
 
+.main-img-box {
+  width: -webkit-fill-available;
+  position: relative;
+}
+
+img {
+  outline: 15px solid rgb(111, 72, 148);
+  outline-offset: -15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.img-text {
+  display: inline-block;
+  position: absolute;
+  top: 75%;
+  left: 1%;
+  background-color: rgb(111, 72, 148);
+  width: 15%;
+  text-align: center;
+}
+
+.img-text > * {
+  width: 100%;
+}
+
 .secondary-image {
   margin-top: 2%;
   max-width: 100%;
   display: grid;
   grid-template-columns: 49% 49%;
   grid-gap: 3% 2%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  text-align: right;
+  margin-right: 2%;
+  padding: 2%;
 }
