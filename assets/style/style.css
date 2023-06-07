@@ -6,6 +6,7 @@
 
 a {
   text-decoration: solid;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -25,16 +26,21 @@ header h1 {
   position: relative;
   font-size: 4rem;
   left: 2%;
+  flex: 1 1 auto;
 }
 
-header nav {
-  width: 40vw;
+.nav-button {
+  display: none;
+}
+
+.nav-default {
+  width: 50vw;
   display: inline;
+  flex: 1 1 auto;
 }
 
-header nav a {
+.nav-default a {
   color: white;
-  font-size: 2rem;
   margin: 6%;
 }
 
@@ -173,6 +179,118 @@ footer p {
 
 footer a {
   color: white;
-  font-size: 2rem;
   margin: 6%;
+}
+
+@media screen and (max-width: 1370px) {
+  .nav-default {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  .nav-default {
+    width: 90vw;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav-default {
+    display: none;
+  }
+
+  .nav-open {
+    width: auto;
+    mix-blend-mode: darken;
+    border: none;
+    float: right;
+  }
+
+  .nav-button {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+  }
+  .nav-dropdown > * {
+    width: 100%;
+  }
+  .nav-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+  }
+
+  .nav-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .nav-dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .nav-button:hover .nav-dropdown {
+    display: block;
+  }
+
+  .nav-dropdown:hover .nav-open {
+    background-color: #3e8e41;
+  }
+  .img-text {
+    display: none;
+  }
+
+  .secondary-img-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  .main-img-box {
+    border: 10px solid rgb(111, 72, 148);
+    outline-offset: -10px;
+    border-radius: 8px;
+  }
+
+  .secondary-image {
+    border: 10px solid rgb(111, 72, 148);
+    outline-offset: -10px;
+    border-radius: 8px;
+  }
 }
