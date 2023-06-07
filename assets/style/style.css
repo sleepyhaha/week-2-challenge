@@ -1,3 +1,13 @@
+:root {
+  --img-border-color: rgb(111, 72, 148);
+  --img-border: 15px solid var(--img-border-color);
+  --text-background-color: rgb(111, 72, 148);
+  --background-color-1: rgb(95, 94, 95);
+  --background-color-2: rgb(179, 179, 179);
+  --img-border-small: 10px solid var(--img-border-color);
+  --text-color: white;
+}
+
 * {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
@@ -17,11 +27,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(95, 94, 95);
+  background-color: var(--background-color-1);
 }
 
 header h1 {
-  color: white;
+  color: var(--text-color);
   display: inline;
   position: relative;
   font-size: 4rem;
@@ -40,7 +50,7 @@ header h1 {
 }
 
 .nav-default a {
-  color: white;
+  color: var(--text-color);
   margin: 6%;
 }
 
@@ -60,13 +70,13 @@ header h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--text-color);
 }
 
 main {
   display: flex;
   flex-flow: column nowrap;
-  background-color: rgb(179, 179, 179);
+  background-color: var(--background-color-2);
 }
 
 .main-section {
@@ -100,7 +110,7 @@ main {
 .main-img-box {
   width: -webkit-fill-available;
   position: relative;
-  border: 15px solid rgb(111, 72, 148);
+  border: var(--img-border);
   outline-offset: -15px;
   border-radius: 10px;
 }
@@ -109,7 +119,7 @@ main {
   display: inline-block;
   position: absolute;
   top: 75%;
-  background-color: rgb(111, 72, 148);
+  background-color: var(--text-background-color);
   width: 15%;
   text-align: center;
 }
@@ -133,7 +143,7 @@ main {
   flex-flow: row wrap;
   justify-content: space-evenly;
   position: relative;
-  border: 15px solid rgb(111, 72, 148);
+  border: var(--img-border);
   outline-offset: -15px;
   border-radius: 10px;
 }
@@ -141,7 +151,7 @@ main {
 .secondary-img-text {
   position: absolute;
   display: inline-block;
-  background-color: rgb(111, 72, 148);
+  background-color: var(--text-background-color);
   width: 28%;
   text-align: center;
   left: 0%;
@@ -164,7 +174,7 @@ img:hover {
 footer {
   display: flex;
   align-items: center;
-  background-color: rgb(95, 94, 95);
+  background-color: var(--background-color-1);
   padding: 3%;
 }
 
@@ -178,7 +188,7 @@ footer p {
 }
 
 footer a {
-  color: white;
+  color: var(--text-color);
   margin: 6%;
 }
 
@@ -283,13 +293,13 @@ footer a {
   }
 
   .main-img-box {
-    border: 10px solid rgb(111, 72, 148);
+    border: var(--img-border-small);
     outline-offset: -10px;
     border-radius: 8px;
   }
 
   .secondary-image {
-    border: 10px solid rgb(111, 72, 148);
+    border: var(--img-border-small);
     outline-offset: -10px;
     border-radius: 8px;
   }
