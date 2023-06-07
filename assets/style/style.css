@@ -1,0 +1,314 @@
+:root {
+  --img-border-color: rgb(111, 72, 148);
+  --img-border: 15px solid var(--img-border-color);
+  --text-background-color: rgb(111, 72, 148);
+  --background-color-1: rgb(95, 94, 95);
+  --background-color-2: rgb(179, 179, 179);
+  --img-border-small: 10px solid var(--img-border-color);
+  --text-color: white;
+}
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+
+a {
+  text-decoration: solid;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color-1);
+}
+
+header h1 {
+  color: var(--text-color);
+  display: inline;
+  position: relative;
+  font-size: 4rem;
+  left: 4%;
+  flex: 1 1 auto;
+}
+
+.nav-button {
+  display: none;
+}
+
+.nav-default {
+  width: 50vw;
+  display: inline;
+  flex: 1 1 auto;
+}
+
+.nav-default a {
+  color: var(--text-color);
+  margin: 6%;
+}
+
+.hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg);
+  height: 25vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--background-color-2);
+}
+
+.main-section {
+  position: relative;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  right: 3%;
+}
+
+.section-title {
+  position: absolute;
+  text-align: center;
+  left: 2%;
+  float: left;
+  width: 26%;
+  border-right: 10px solid black;
+}
+
+.about-text {
+  float: right;
+  width: 70%;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-flow: column wrap;
+  float: right;
+  width: 70%;
+}
+
+.main-img-box {
+  width: -webkit-fill-available;
+  position: relative;
+  border: var(--img-border);
+  outline-offset: -15px;
+  border-radius: 10px;
+}
+
+.img-text {
+  display: inline-block;
+  position: absolute;
+  top: 75%;
+  background-color: var(--text-background-color);
+  width: 15%;
+  text-align: center;
+}
+
+.img-text > * {
+  width: 100%;
+}
+
+.secondary-image-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.secondary-image {
+  margin-top: 2%;
+  max-width: 100%;
+  display: flex;
+  width: 48%;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  position: relative;
+  border: var(--img-border);
+  outline-offset: -15px;
+  border-radius: 10px;
+}
+
+.secondary-img-text {
+  position: absolute;
+  display: inline-block;
+  background-color: var(--text-background-color);
+  width: 28%;
+  text-align: center;
+  left: 0%;
+  bottom: 15%;
+}
+
+.secondary-img-text > * {
+  width: 100%;
+}
+
+img {
+  filter: brightness(50%);
+}
+
+img:hover {
+  filter: brightness(100%);
+  transition: 0.2s ease 0s;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color-1);
+  padding: 3%;
+}
+
+footer h2 {
+  margin-left: 2%;
+}
+
+footer p {
+  text-align: right;
+  margin-right: 2%;
+}
+
+footer a {
+  color: var(--text-color);
+  margin: 6%;
+}
+
+@media screen and (max-width: 1370px) {
+  .nav-default {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  .nav-default {
+    width: 90vw;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav-default {
+    display: none;
+  }
+
+  .nav-open {
+    width: auto;
+    mix-blend-mode: darken;
+    border: none;
+  }
+
+  .nav-button {
+    display: inline-block;
+    position: relative;
+    width: 15%;
+  }
+  .nav-dropdown > * {
+    width: 100%;
+  }
+  .nav-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+    width: 150%;
+    right: 1%;
+  }
+
+  .nav-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 80%;
+  }
+
+  .nav-dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .nav-button:hover .nav-dropdown {
+    display: block;
+    transition: 0.2 ease 0;
+  }
+
+  .nav-dropdown:hover .nav-open {
+    background-color: #3e8e41;
+  }
+
+  .img-text {
+    display: none;
+  }
+
+  .secondary-img-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  .nav-dropdown a {
+    font-size: 60%;
+  }
+
+  .main-img-box {
+    border: var(--img-border-small);
+    outline-offset: -10px;
+    border-radius: 8px;
+  }
+
+  .secondary-image {
+    border: var(--img-border-small);
+    outline-offset: -10px;
+    border-radius: 8px;
+  }
+}
