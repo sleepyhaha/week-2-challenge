@@ -8,10 +8,16 @@
   --text-color: white;
 }
 
+/* Font taken from Google Fonts */
+
 * {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -39,6 +45,8 @@ header h1 {
   flex: 1 1 auto;
 }
 
+/* Hides dropdown menu */
+
 .nav-button {
   display: none;
 }
@@ -53,6 +61,8 @@ header h1 {
   color: var(--text-color);
   margin: 6%;
 }
+
+/* Following hero image code is taken from https://www.w3schools.com/howto/howto_css_hero_image.asp */
 
 .hero-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -71,6 +81,20 @@ header h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--text-color);
+}
+
+/* Moved IDs above classes for webpage layout */
+
+#about-text {
+  float: right;
+  width: 70%;
+}
+
+#portfolio-images {
+  display: flex;
+  flex-flow: column wrap;
+  float: right;
+  width: 70%;
 }
 
 main {
@@ -93,18 +117,6 @@ main {
   float: left;
   width: 26%;
   border-right: 10px solid black;
-}
-
-.about-text {
-  float: right;
-  width: 70%;
-}
-
-.portfolio-images {
-  display: flex;
-  flex-flow: column wrap;
-  float: right;
-  width: 70%;
 }
 
 .main-img-box {
@@ -221,6 +233,8 @@ footer a {
   .nav-default {
     display: none;
   }
+
+  /* Following hoverable dropdown code taken from  https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
   .nav-open {
     width: auto;
