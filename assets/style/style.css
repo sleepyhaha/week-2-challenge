@@ -41,6 +41,8 @@ header h1 {
   flex: 1 1 auto;
 }
 
+/* Hides dropdown menu */
+
 .nav-button {
   display: none;
 }
@@ -77,6 +79,20 @@ header h1 {
   color: var(--text-color);
 }
 
+/* Moved IDs above classes for webpage layout */
+
+#about-text {
+  float: right;
+  width: 70%;
+}
+
+#portfolio-images {
+  display: flex;
+  flex-flow: column wrap;
+  float: right;
+  width: 70%;
+}
+
 main {
   display: flex;
   flex-flow: column nowrap;
@@ -97,18 +113,6 @@ main {
   float: left;
   width: 26%;
   border-right: 10px solid black;
-}
-
-.about-text {
-  float: right;
-  width: 70%;
-}
-
-.portfolio-images {
-  display: flex;
-  flex-flow: column wrap;
-  float: right;
-  width: 70%;
 }
 
 .main-img-box {
