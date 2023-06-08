@@ -83,7 +83,7 @@ header h1 {
   color: var(--text-color);
 }
 
-/* Moved IDs above classes for webpage layout */
+/* Moved IDs above classes to maintain webpage layout */
 
 #about-text {
   float: right;
@@ -95,6 +95,13 @@ header h1 {
   flex-flow: column wrap;
   float: right;
   width: 70%;
+}
+
+#secondary-image-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 main {
@@ -137,13 +144,6 @@ main {
 }
 
 .img-text > * {
-  width: 100%;
-}
-
-.secondary-image-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
 }
 
