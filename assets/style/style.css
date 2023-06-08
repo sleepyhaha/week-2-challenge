@@ -204,7 +204,7 @@ footer a {
   margin: 6%;
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1430px) {
   .nav-default {
     width: 70vw;
   }
@@ -229,7 +229,7 @@ footer a {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1010px) {
   .nav-default {
     display: none;
   }
